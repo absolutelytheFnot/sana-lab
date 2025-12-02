@@ -7,17 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Grain Texture Overlay -->
+    <div class="grain-overlay"></div>
+
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
             <div class="nav-content">
                 <div class="logo">Sana Growth</div>
                 <div class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#work">Work</a>
-                    <a href="#collaborate">Collaborate</a>
-                    <a href="#journal">Journal</a>
+                    <a href="#home" class="nav-link">
+                        <span>Home</span>
+                        <div class="nav-underline"></div>
+                    </a>
+                    <a href="#about" class="nav-link">
+                        <span>About</span>
+                        <div class="nav-underline"></div>
+                    </a>
+                    <a href="#work" class="nav-link">
+                        <span>Work</span>
+                        <div class="nav-underline"></div>
+                    </a>
+                    <a href="#collaborate" class="nav-link">
+                        <span>Collaborate</span>
+                        <div class="nav-underline"></div>
+                    </a>
+                    <a href="#journal" class="nav-link">
+                        <span>Journal</span>
+                        <div class="nav-underline"></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -25,67 +43,82 @@
 
     <!-- 1. Hero Section: The Future Isn't Fixed -->
     <section id="home" class="hero">
-        <!-- Video Background -->
-        <div class="hero-video-container">
-            <div class="video-overlay"></div>
-            <!-- Replace with actual video: moss growing over concrete, hands sketching, circuits turning to roots -->
-            <div class="video-placeholder"></div>
+        <!-- Parallax Background Image -->
+        <div class="hero-bg parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1451847251646-8a6c0dd1510c?q=80&w=2400&auto=format&fit=crop');">
+            <div class="hero-overlay"></div>
         </div>
 
         <div class="container">
             <div class="hero-content">
-                <div class="hero-tagline">The Future Isn't Fixed</div>
+                <!-- Asymmetric Layout -->
+                <div class="hero-layout">
+                    <div class="hero-left">
+                        <div class="hero-tagline">The Future Isn't Fixed</div>
 
-                <!-- Scroll reveal phrases -->
-                <div class="reveal-words">
-                    <span class="reveal-word" data-delay="0">Strategy.</span>
-                    <span class="reveal-word" data-delay="1">Systems.</span>
-                    <span class="reveal-word" data-delay="2">Soul.</span>
+                        <!-- Large Stacked Words -->
+                        <div class="hero-words-stack">
+                            <h1 class="mega-word" data-scroll-speed="0.5">Strategy.</h1>
+                            <h1 class="mega-word" data-scroll-speed="0.7">Systems.</h1>
+                            <h1 class="mega-word" data-scroll-speed="0.9">Soul.</h1>
+                        </div>
+                    </div>
+
+                    <div class="hero-right">
+                        <div class="hero-copy-block">
+                            <p class="hero-statement">We design systems that give back more than they take — from the way companies grow to the way communities heal.</p>
+                            <p class="hero-statement-sub">Sana Growth is where strategy, design, and regeneration meet to create inclusive infrastructures.</p>
+                            <a href="#work" class="cta-button primary glow-effect">Explore what we're building →</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="hero-main-copy">
-                    <p class="hero-statement">We design systems that give back more than they take — from the way companies grow to the way communities heal.</p>
-                    <p class="hero-statement-sub">Sana Growth is where strategy, design, and regeneration meet to create inclusive infrastructures.</p>
-                </div>
-
-                <a href="#work" class="cta-button primary">Explore what we're building →</a>
             </div>
         </div>
+
+        <!-- Floating shapes -->
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
     </section>
 
     <!-- 2. About Section: We Build Regenerative Systems -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header pulse-header">
+            <div class="section-header pulse-header fade-in-section">
                 <h2>We Build Regenerative Systems</h2>
+                <div class="header-glow"></div>
             </div>
 
             <div class="about-content">
-                <!-- Philosophy Block -->
-                <div class="philosophy-block">
+                <!-- Philosophy Block with Gradient Background -->
+                <div class="philosophy-block fade-in-section">
+                    <div class="philosophy-gradient-bg"></div>
                     <blockquote class="philosophy-quote">
                         "Growth isn't the problem. Extraction is. We're building a new model of progress: one rooted in reciprocity, access, and imagination."
                     </blockquote>
                 </div>
 
-                <!-- Structure Explanation -->
-                <div class="structure-explanation">
-                    <h3>A Regenerative Ecosystem</h3>
-                    <p>Sana Growth operates as a holding studio—a multidisciplinary infrastructure that bridges strategic advisory, venture investment, and experimental design. Each project, partnership, and venture cross-pollinates with the others, creating a living system where insights from one domain strengthen the whole.</p>
-
-                    <p>We work at the intersection of urgency and imagination: supporting founders building regenerative businesses, advising organizations through systemic transformation, and prototyping new models for community, equity, and belonging.</p>
+                <!-- Structure Explanation with Image -->
+                <div class="structure-grid fade-in-section">
+                    <div class="structure-text">
+                        <h3>A Regenerative Ecosystem</h3>
+                        <p>Sana Growth operates as a holding studio—a multidisciplinary infrastructure that bridges strategic advisory, venture investment, and experimental design. Each project, partnership, and venture cross-pollinates with the others, creating a living system where insights from one domain strengthen the whole.</p>
+                        <p>We work at the intersection of urgency and imagination: supporting founders building regenerative businesses, advising organizations through systemic transformation, and prototyping new models for community, equity, and belonging.</p>
+                    </div>
+                    <div class="structure-image hover-lift">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop" alt="Interconnected systems">
+                        <div class="image-overlay"></div>
+                    </div>
                 </div>
 
                 <!-- Logo Carousel -->
-                <div class="partners-section">
+                <div class="partners-section fade-in-section">
                     <h4>Selected Collaborators & Partners</h4>
                     <div class="logo-carousel">
-                        <div class="logo-item">Google</div>
-                        <div class="logo-item">Amazon</div>
-                        <div class="logo-item">Facebook</div>
-                        <div class="logo-item">Rakuten</div>
-                        <div class="logo-item">Kestrel</div>
-                        <div class="logo-item">DwellingIQ</div>
+                        <div class="logo-item hover-glow">Google</div>
+                        <div class="logo-item hover-glow">Amazon</div>
+                        <div class="logo-item hover-glow">Facebook</div>
+                        <div class="logo-item hover-glow">Rakuten</div>
+                        <div class="logo-item hover-glow">Kestrel</div>
+                        <div class="logo-item hover-glow">DwellingIQ</div>
                     </div>
                 </div>
             </div>
@@ -95,12 +128,13 @@
     <!-- 3. Work Section: Selected Systems in Motion -->
     <section id="work" class="work">
         <div class="container">
-            <div class="section-header pulse-header">
+            <div class="section-header pulse-header fade-in-section">
                 <h2>Selected Systems in Motion</h2>
+                <div class="header-glow"></div>
             </div>
 
             <!-- Strategic Advisory Work -->
-            <div class="work-item">
+            <div class="work-item fade-in-section">
                 <div class="work-content">
                     <div class="work-category">Strategic Advisory</div>
                     <h3>Building Foundations for Scaled Impact</h3>
@@ -111,13 +145,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="work-visual">
-                    <div class="visual-placeholder">Strategic Advisory Visual</div>
+                <div class="work-visual hover-zoom">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop" alt="Strategic collaboration">
+                    <div class="image-overlay gradient-overlay"></div>
                 </div>
             </div>
 
             <!-- Venture & Ecosystem Work -->
-            <div class="work-item reverse">
+            <div class="work-item reverse fade-in-section">
                 <div class="work-content">
                     <div class="work-category">Venture & Ecosystem</div>
                     <h3>Capital for Regenerative Futures</h3>
@@ -128,13 +163,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="work-visual">
-                    <div class="visual-placeholder">Venture Work Visual</div>
+                <div class="work-visual hover-zoom">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=800&auto=format&fit=crop" alt="Growth and nature">
+                    <div class="image-overlay gradient-overlay"></div>
                 </div>
             </div>
 
             <!-- Experimental / Lab Work -->
-            <div class="work-item">
+            <div class="work-item fade-in-section">
                 <div class="work-content">
                     <div class="work-category">Experimental / Lab</div>
                     <h3>Prototyping the Future</h3>
@@ -145,8 +181,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="work-visual">
-                    <div class="visual-placeholder">Lab Work Visual</div>
+                <div class="work-visual hover-zoom">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop" alt="Community collaboration">
+                    <div class="image-overlay gradient-overlay"></div>
                 </div>
             </div>
         </div>
@@ -155,24 +192,25 @@
     <!-- 4. Collaborate Section: Let's Build What's Next -->
     <section id="collaborate" class="collaborate">
         <div class="container">
-            <div class="section-header pulse-header">
+            <div class="section-header pulse-header fade-in-section">
                 <h2>Let's Build What's Next</h2>
+                <div class="header-glow"></div>
             </div>
 
-            <div class="collaborate-intro">
+            <div class="collaborate-intro fade-in-section">
                 <p>We partner with builders, researchers, and regenerative thinkers across sectors, from technology to policy, from architecture to wellness.</p>
                 <p class="collaborate-statement">If you're building something that belongs to the future, let's talk.</p>
             </div>
 
             <!-- CTA Buttons -->
-            <div class="cta-buttons">
-                <button class="cta-button secondary" data-form="partnerships">Explore partnerships</button>
-                <button class="cta-button secondary" data-form="advisory">Advisory & speaking inquiries</button>
-                <button class="cta-button secondary" data-form="prototype">Prototype with us</button>
+            <div class="cta-buttons fade-in-section">
+                <button class="cta-button secondary hover-expand" data-form="partnerships">Explore partnerships</button>
+                <button class="cta-button secondary hover-expand" data-form="advisory">Advisory & speaking inquiries</button>
+                <button class="cta-button secondary hover-expand" data-form="prototype">Prototype with us</button>
             </div>
 
             <!-- Contact Form -->
-            <div class="contact-form-container">
+            <div class="contact-form-container fade-in-section">
                 <form class="contact-form" id="collaborateForm">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -199,7 +237,7 @@
                         <input type="text" id="contact" name="contact" required>
                     </div>
 
-                    <button type="submit" class="cta-button primary">Send Message</button>
+                    <button type="submit" class="cta-button primary glow-effect">Send Message</button>
                 </form>
             </div>
         </div>
@@ -208,42 +246,61 @@
     <!-- 5. Journal Section: This Belongs To Us -->
     <section id="journal" class="journal">
         <div class="container">
-            <div class="section-header pulse-header">
+            <div class="section-header pulse-header fade-in-section">
                 <h2>This Belongs To Us</h2>
                 <p class="section-subtitle">Long-form reflections on systems, community, and regenerative futures</p>
+                <div class="header-glow"></div>
             </div>
 
             <!-- Journal Grid -->
             <div class="journal-grid">
                 <!-- Article Preview 1 -->
-                <article class="journal-item">
-                    <div class="journal-tag">Systems</div>
-                    <h3 class="journal-title">The Architecture of Belonging</h3>
-                    <p class="journal-excerpt">How we design spaces—physical and digital—determines who feels welcome, who feels safe, and who can thrive...</p>
-                    <a href="https://substack.com/@thisbelongstous" target="_blank" class="journal-link">Read more →</a>
+                <article class="journal-item hover-tilt fade-in-section">
+                    <div class="journal-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" alt="Architecture">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="journal-content">
+                        <div class="journal-tag">Systems</div>
+                        <h3 class="journal-title">The Architecture of Belonging</h3>
+                        <p class="journal-excerpt">How we design spaces—physical and digital—determines who feels welcome, who feels safe, and who can thrive...</p>
+                        <a href="https://substack.com/@thisbelongstous" target="_blank" class="journal-link">Read more →</a>
+                    </div>
                 </article>
 
                 <!-- Article Preview 2 -->
-                <article class="journal-item">
-                    <div class="journal-tag">Community</div>
-                    <h3 class="journal-title">Regeneration Over Growth</h3>
-                    <p class="journal-excerpt">What if our metrics weren't about scale, but about restoration? What changes when we design for renewal?...</p>
-                    <a href="https://substack.com/@thisbelongstous" target="_blank" class="journal-link">Read more →</a>
+                <article class="journal-item hover-tilt fade-in-section">
+                    <div class="journal-image">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=600&auto=format&fit=crop" alt="Nature regeneration">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="journal-content">
+                        <div class="journal-tag">Community</div>
+                        <h3 class="journal-title">Regeneration Over Growth</h3>
+                        <p class="journal-excerpt">What if our metrics weren't about scale, but about restoration? What changes when we design for renewal?...</p>
+                        <a href="https://substack.com/@thisbelongstous" target="_blank" class="journal-link">Read more →</a>
+                    </div>
                 </article>
 
                 <!-- Article Preview 3 -->
-                <article class="journal-item">
-                    <div class="journal-tag">AI + Ethics</div>
-                    <h3 class="journal-title">Intelligence vs. Wisdom</h3>
-                    <p class="journal-excerpt">As we build more intelligent systems, are we building wiser ones? The distinction matters more than ever...</p>
-                    <a href="https://substack.com/@thisbelongstous" target="_blank" class="journal-link">Read more →</a>
+                <article class="journal-item hover-tilt fade-in-section">
+                    <div class="journal-image">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop" alt="Technology and humanity">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="journal-content">
+                        <div class="journal-tag">AI + Ethics</div>
+                        <h3 class="journal-title">Intelligence vs. Wisdom</h3>
+                        <p class="journal-excerpt">As we build more intelligent systems, are we building wiser ones? The distinction matters more than ever...</p>
+                        <a href="https://substack.com/@thisbelongstous" target="_blank" class="journal-link">Read more →</a>
+                    </div>
                 </article>
             </div>
 
             <!-- Subscribe CTA -->
-            <div class="journal-cta">
+            <div class="journal-cta fade-in-section">
                 <p>Subscribe for long-form reflections and regenerative futures.</p>
-                <a href="https://substack.com/@thisbelongstous" target="_blank" class="cta-button primary">Subscribe on Substack →</a>
+                <a href="https://substack.com/@thisbelongstous" target="_blank" class="cta-button primary glow-effect">Subscribe on Substack →</a>
             </div>
         </div>
     </section>
@@ -260,15 +317,15 @@
                 <div class="footer-links">
                     <div class="footer-section">
                         <h4>Connect</h4>
-                        <a href="mailto:hello@sanagrowth.com">hello@sanagrowth.com</a>
-                        <a href="tel:+14242972352">1 (424) 297-2352</a>
+                        <a href="mailto:hello@sanagrowth.com" class="footer-link">hello@sanagrowth.com</a>
+                        <a href="tel:+14242972352" class="footer-link">1 (424) 297-2352</a>
                     </div>
 
                     <div class="footer-section">
                         <h4>Follow</h4>
-                        <a href="https://www.linkedin.com/company/sanagrowth" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="https://www.instagram.com/sanagrowth" target="_blank" rel="noopener">Instagram</a>
-                        <a href="https://substack.com/@thisbelongstous" target="_blank" rel="noopener">Substack</a>
+                        <a href="https://www.linkedin.com/company/sanagrowth" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+                        <a href="https://www.instagram.com/sanagrowth" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+                        <a href="https://substack.com/@thisbelongstous" target="_blank" rel="noopener" class="footer-link">Substack</a>
                     </div>
                 </div>
 
